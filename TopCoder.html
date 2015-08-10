@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0088)http://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16525&pm=13921 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TopCoder</title>
+    
+    <link type="image/x-icon" rel="shortcut icon" href="http://community.topcoder.com/i/favicon.ico">
+    
+
+
+
+
+
+<script type="text/javascript" async="" src="./TopCoder_files/ga.js"></script><script type="text/javascript" src="./TopCoder_files/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./TopCoder_files/jquery-migrate-1.2.1.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/reskin/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="./TopCoder_files/jquery.jfeed.pack.js"></script>
+<script type="text/javascript" src="./TopCoder_files/newTCScript.js"></script><link type="image/x-icon" rel="shortcut icon" href="http://community.topcoder.com/i/favicon.ico">
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<link href="./TopCoder_files/css" rel="stylesheet" type="text/css">
+    
+    <link type="text/css" rel="stylesheet" href="./TopCoder_files/coders.css">
+    <link type="text/css" rel="stylesheet" href="./TopCoder_files/login.css">
+    <link type="text/css" rel="stylesheet" href="./TopCoder_files/myHome.css">
+    <!--[if IE]>
+    <link type="text/css" rel="stylesheet" href="/css/ie.css" />
+    <![endif]-->
+    
+<link type="text/css" rel="stylesheet" href="./TopCoder_files/newStyles.css">
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="/css/reskin/newStyles_ie8.css"/>
+<![endif]-->
+
+
+    <script type="text/javascript" src="./TopCoder_files/print.js"></script>
+</head>
+
+<body>
+
+<div id="onTop">
+
+
+
+
+
+
+
+
+
+
+    
+        <header id="navigation" class="newUser">
+            <div class="container">
+                <div class="headerTopRightMenu">
+                    
+                        <div class="headerTopRightMenuLink logIn">
+                            <div class="text"><a href="http://www.topcoder.com/tc?module=Logout" class="actionLogin">Log Out</a></div>
+                            <div class="clear"></div>
+                        </div>
+                    
+
+                    <div class="separator"></div>
+                    <div class="headerTopRightMenuLink contact">
+                        <div class="text"><a href="http://www.topcoder.com/contact-us/">Contact</a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="headerTopRightMenuLink help">
+                        <div class="text"><a href="http://help.topcoder.com/">Help Center</a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="separator beforeSearch"></div>
+                    <div class="headerTopRightMenuLink search last">
+                        <div class="icon"></div>
+                        <div class="text"><a href="http://www.topcoder.com/search">Search</a></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <h1 class="logo">
+                    <a href="http://www.topcoder.com/" title="topcoder"></a>
+                </h1>
+                <nav id="mainNav" class="mainNav">
+                    <ul class="root">
+                        <li id="nav-menu-item-13018"><a href="http://www.topcoder.com/challenges/" class="13018"><i></i>Challenges</a>
+                            <ul class="child">
+                                <li id="nav-menu-item-13510"><a href="http://www.topcoder.com/challenges/" class="all"><i></i>All</a></li>
+                                <li id="nav-menu-item-13511"><a href="http://www.topcoder.com/active-challenges/design/" class="design"><i></i>Design</a></li>
+                                <li id="nav-menu-item-13512"><a href="http://www.topcoder.com/active-challenges/develop/" class="develop"><i></i>Development</a></li>
+                                <li id="nav-menu-item-13513"><a href="http://www.topcoder.com/active-challenges/data/" class="data"><i></i>Data Science</a></li>
+                                <li id="nav-menu-item-13529"><a href="http://community.topcoder.com/contest/arena/ContestAppletProd.jnlp" class="topcoder-arena"><i></i>topcoder Arena</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-menu-item-13129"><a href="http://www.topcoder.com/community/" class="13129"><i></i>Community</a>
+                            <ul class="child">
+                                <li id="nav-menu-item-13509"><a href="http://www.topcoder.com/community/" class="welcome"><i></i>Home</a></li>
+                                <li id="nav-menu-item-13034"><a href="http://www.topcoder.com/community/getting-started/" class="13034"><i></i>Getting
+                                    Started</a></li>
+                                <li id="nav-menu-item-12983"><a href="http://www.topcoder.com/community/how-it-works/" class="customer-solutions"><i></i>How It Works</a></li>
+                                <li id="nav-menu-item-13105"><a href="http://apps.topcoder.com/forums/" class="forums"><i></i>Forums</a></li>
+                                <li id="nav-menu-item-13036"><a href="http://www.topcoder.com/community/events/" class="13036"><i></i>Events</a></li>
+                                <li id="nav-menu-item-13514"><a href="http://community.topcoder.com/tco14" class="topcoder-open"><i></i>TopCoder Open</a></li>
+                                <li id="nav-menu-item-13038"><a href="http://www.topcoder.com/community/stories/" class="13038"><i></i>Stories</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-menu-item-13469"><a href="http://community.topcoder.com/mission" class="about-us"><i></i>About topcoder</a>
+                            <ul class="child">
+                                <li id="nav-menu-item-13516"><a href="http://www.topcoder.com/mission/" class="13516"><i></i>Mission</a></li>
+                                <li id="nav-menu-item-13032"><a href="http://www.topcoder.com/research/" class="13032"><i></i>Research</a></li>
+                                <li id="nav-menu-item-13450"><a href="http://www.topcoder.com/case-studies/" class="case-studies"><i></i>Case Studies</a></li>
+                                <li id="nav-menu-item-13045"><a href="http://www.topcoder.com/press/" class="13045"><i></i>Press</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-menu-item-13379"><a href="http://www.topcoder.com/blog/" class="13379"><i></i>Blog</a></li>
+                        <!--
+                        <li class="noReg logoutLink 	hide"><a href="http://www.topcoder.com?auth=logout" class="actionLogout">Log Out</a></li>
+                        <li class="noReg loginLink"><a href="javascript:;" class="actionLogin">Log In</a></li>
+                        -->
+                    </ul>
+                </nav>
+                <!--
+                <a href="http://www.topcoder.com?auth=logout" class="onMobi noReg linkLogout actionLogout hide">Log Out</a>
+                  <a href="javascript:;" class="onMobi noReg linkLogin actionLogin">Log In</a>
+                -->
+                
+                    <span class="btnRegWrap noReg"><a href="http://www.topcoder.com/tc?module=MyHome" class="btn btnMyHome">My Home</a></span>
+                
+
+                <!-- /.userWidget -->
+            </div>
+        </header>
+    
+    
+
+
+
+
+</div>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="mainContent" style="visibility: visible;">
+<tbody>
+    <tr valign="top" class="alignTop">
+
+        <td width="180" id="onLeft">
+            
+
+
+
+
+
+
+
+    
+        
+            
+            
+        
+
+
+
+
+
+
+<div style="width: 185px; display: block;" class="leftNavWrapper">
+    
+<input type="hidden" id="nodeName" value="m_long_contests">
+<script language="JavaScript" type="text/javascript" src="./TopCoder_files/arena.js"></script>
+
+    <section class="get-time" style="margin-bottom:15px">
+        
+        <span class="date"></span>
+        <a href="javascript:tcTime();">Get Time</a>
+    </section>
+    <!-- End .get-time -->
+
+    <section class="navigation">
+    <ul>
+        <li><a id="copilot_posting_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Copilot%20Posting">Copilot Posting</a></li>
+        <li><a href="http://www.topcoder.com/active-challenges/design/">Design</a></li>
+        <li>
+            <a href="javascript:;">Develop<i></i></a>
+            <ul class="hide">
+                <li><a id="conceptualization_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Conceptualization">Conceptualization</a></li>
+                <li><a id="specification_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Specification">Specification</a></li>
+                <li><a id="architecture_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Architecture">Architecture</a></li>
+                <li><a id="ui_prototype_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=UI%20Prototype%20Competition">UI Prototype</a></li>
+                <li><a id="assembly_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Assembly%20Competition">Assembly</a></li>
+                <li><a id="first2finish_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=First2Finish">First2Finish</a></li>
+                <li><a id="code_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Code">Code</a></li>
+                <li><a id="des_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Design">Component Design</a></li>
+                <li><a id="dev_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Development">Component Development</a></li>
+                <li><a id="test_suites_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Test%20Suites">Test Suites</a></li>
+                <li><a id="content_creation_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Content%20Creation">Content Creation</a></li>
+                <li><a id="test_scenarios_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Test%20Scenarios">Test Scenarios</a></li>
+                <li><a id="bug_hunt_compete" href="http://www.topcoder.com/challenges/develop/active/?challengeTypes=Bug%20Hunt">Bug Hunt</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">Review Opportunities<i></i></a>
+            <ul class="hide">
+                <li>
+                    <dl>
+                        <dt>Conceptualization</dt>
+                        <dd><a id="conceptualization_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=23">Review Opportunities</a></dd>
+                        <dd><a id="conceptualization_review_border" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=23">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Specification</dt>
+                        <dd><a id="specification_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=6">Review Opportunities</a></dd>
+                        <dd><a id="specification_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=6">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Architecture</dt>
+                        <dd><a id="architecture_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=7">Review Opportunities</a></dd>
+                        <dd><a id="architecture_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=7">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Component Design</dt>
+                        <dd><a id="des_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=1">Review Opportunities</a></dd>
+                        <dd><a id="des_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=1">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Component Development</dt>
+                        <dd><a id="dev_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=2">Review Opportunities</a></dd>
+                        <dd><a id="dev_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=2">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Assembly</dt>
+                        <dd><a id="assembly_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=14">Review Opportunities</a></dd>
+                        <dd><a id="assembly_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=14">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>First2Finish</dt>
+                        <dd><a id="first2finish_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=38">Review Opportunities</a></dd>
+                        <dd><a id="first2finish_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=38">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Code</dt>
+                        <dd><a id="code_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=39">Review Opportunities</a></dd>
+                        <dd><a id="code_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=39">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Test Suites</dt>
+                        <dd><a id="test_suites_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=13">Review Opportunities</a></dd>
+                        <dd><a id="test_suites_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=13">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Report</dt>
+                        <dd><a id="reporting_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=36">Review Opportunities</a></dd>
+                        <dd><a id="reporting_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=36">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>UI prototype</dt>
+                        <dd><a id="ui_prototype_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=19">Review Opportunities</a></dd>
+                        <dd><a id="ui_prototype_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=19">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>RIA Build</dt>
+                        <dd><a id="ria_build_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=24">Review Opportunities</a></dd>
+                        <dd><a id="ria_build_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=24">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Content Creation</dt>
+                        <dd><a id="content_creation_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=35">Review Opportunities</a></dd>
+                        <dd><a id="content_creation_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=35">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Test Scenarios</dt>
+                        <dd><a id="test_scenarios_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=26">Review Opportunities</a></dd>
+                        <dd><a id="test_scenarios_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=26">Meet the review board</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="last-item">
+                        <dt>Bug Hunt</dt>
+                        <dd><a id="bug_hunt_review" href="http://www.topcoder.com/tc?module=ViewReviewAuctions&pt=9">Review Opportunities</a></dd>
+                        <dd><a id="bug_hunt_review_board" href="http://www.topcoder.com/tc?module=ReviewBoard&pt=9">Meet the review board</a></dd>
+                    </dl>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">Algorithm (SRM)<i></i></a>
+            <ul class="hide">
+                <li><a href="http://www.topcoder.com/active-challenges/data/">Single Round Matches (SRM)</a></li>
+                <li><a id="algo_match_archive" href="http://www.topcoder.com/tc?module=MatchList">Match Archive</a></li>
+                <li><a id="algo_match_overviews" href="http://www.topcoder.com/stat?c=round_overview">Match Overviews</a></li>
+                <li><a id="algo_match_winners" href="http://www.topcoder.com/tc?module=SrmDivisionWins">Match Winners</a></li>
+                <li><a id="algo_match_results" href="http://www.topcoder.com/stat?c=last_match">Match Results</a></li>
+                <li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis">Match Editorials</a></li>
+                <li><a id="algo_problem_archive" href="http://www.topcoder.com/tc?module=ProblemArchive">Problem Archive</a></li>
+                <li><a id="algo_color_changes" href="http://www.topcoder.com/tc?module=ColorChange&ratid=1">Recent Color Changes</a></li>
+                <li><a href="http://apps.topcoder.com/wiki/display/tc/Algorithm+Data+Feeds">Data Feeds</a></li>
+                <li><a href="javascript:arena();">Launch Arena</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">Marathon Match<i></i></a>
+            <ul class="hide">
+                <li><a id="long_compete" href="http://www.topcoder.com/challenges/data/active/">Challenges</a></li>
+                <li><a id="long_match_archive" href="http://www.topcoder.com/challenges/data/past/">Match Archive</a></li>
+                <li><a id="long_match_overview" href="http://www.topcoder.com/longcontest/stats/?module=ViewOverview">Match Overview</a></li>
+                <li><a id="long_match_winners" href="http://www.topcoder.com/longcontest/stats/?module=MatchWinners">Match Winners</a></li>
+                <li><a id="long_editorials" href="http://www.topcoder.com/longcontest/?module=Static&d1=match_editorials&d2=archive">Match Editorials</a></li>
+                <li><a id="long_data_feeds" href="http://www.topcoder.com/longcontest/?module=Static&d1=support&d2=dataFeed">Data Feeds</a></li>
+                <li><a id="long_practice" href="http://www.topcoder.com/longcontest/?module=ViewPractice">Practice</a></li>
+                <li><a id="long_queue" href="http://www.topcoder.com/longcontest/?module=ViewQueue">Queue Status</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.topcoder.com/dr">The Digital Run</a></li>
+        <li><a href="http://software.topcoder.com/review">Submit &amp; Review</a></li>
+        <li>
+            <a href="javascript:;">topcoder Networks<i></i></a>
+            <ul class="hide">
+                <li><a href="http://community.topcoder.com/ntl/">NASA Tournament Lab</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.topcoder.com/community/events/">Events</a></li>
+        <li>
+            <a href="javascript:;">Statistics<i></i></a>
+            <ul class="hide">
+                <li>
+                    <dl>
+                        <dt>Top Ranked</dt>
+                        <dd><a id="top_rated_algo" href="http://www.topcoder.com/tc?module=AlgoRank">Algorithm</a></dd>
+                        <dd><a id="top_rated_hs" href="http://www.topcoder.com/tc?module=HSRank">High School</a></dd>
+                        <dd><a id="top_rated_long" href="http://www.topcoder.com/longcontest/stats/?module=CoderRank">Marathon Match</a></dd>
+                        <dd><a id="top_rated_conceptors" href="http://www.topcoder.com/stat?c=top_conceptors">Conceptualization</a></dd>
+                        <dd><a id="top_rated_specificators" href="http://www.topcoder.com/stat?c=top_specificators">Specification</a></dd>
+                        <dd><a id="top_rated_architects" href="http://www.topcoder.com/stat?c=top_architects">Architecture</a></dd>
+                        <dd><a id="top_rated_des" href="http://www.topcoder.com/stat?c=top_designers">Design</a></dd>
+                        <dd><a id="top_rated_dev" href="http://www.topcoder.com/stat?c=top_developers">Development</a></dd>
+                        <dd><a id="top_rated_assemblers" href="http://www.topcoder.com/stat?c=top_assemblers">Assembly</a></dd>
+                        <dd><a id="top_rated_testers" href="http://www.topcoder.com/stat?c=top_testers">Test Suites</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Record Book</dt>
+                        <dd><a id="algo_recordbook" href="http://www.topcoder.com/tc?module=Static&d1=statistics&d2=recordbook_home">Algorithm</a></dd>
+                        <dd><a id="comp_recordbook" href="http://www.topcoder.com/tc?module=Static&d1=compstats&d2=comp_recordbook_home">Component</a></dd>
+                        <dd><a id="long_recordbook" href="http://www.topcoder.com/longcontest/?module=Static&d1=stats&d2=recordbook_home">Marathon Match</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="last-item">
+                        <dt>Coder of the Month</dt>
+                        <dd><a id="algo_com" href="http://www.topcoder.com/tc?module=COMHistory&achtid=5">Algorithm</a></dd>
+                        <dd><a id="des_com" href="http://www.topcoder.com/tc?module=COMHistory&achtid=6">Design</a></dd>
+                        <dd><a id="dev_com" href="http://www.topcoder.com/tc?module=COMHistory&achtid=7">Development</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">Tutorials<i></i></a>
+            <ul class="hide">
+                <li><a id="algo_tutorials" href="http://help.topcoder.com/data-science/competing-in-algorithm-challenges/algorithm-tutorials/">Algorithm Tutorials</a></li>
+                <li><a id="comp_tutorials" href="http://help.topcoder.com/development/competing-in-development-challenges/development-tutorials/">Software Tutorials</a></li>
+                <li><a id="mm_tutorials" href="http://help.topcoder.com/data-science/competing-in-algorithm-challenges/marathon-match-tutorials/">Marathon Tutorials</a></li>
+            </ul>
+        </li>
+        <li><a href="https://apps.topcoder.com/forums/" id="forums">Forums</a></li>
+        <li><a href="https://www.topcoder.com/tc?module=MyHome" id="my_topcoder">My topcoder</a></li>
+    </ul>
+</section>
+<!-- End .navigation -->
+<section class="member-search">
+    <h3>Member Search</h3>
+    <div class="form">
+        <form action="http://community.topcoder.com/tc" method="get" name="simpleSearchForm" class="noSpace" id="simpleSearchForm">
+            <input class="noSpace" type="hidden" name="module" value="SimpleSearch">
+            <input class="noSpace" type="text" name="ha" value="Handle:" size="12" maxlength="15" onfocus="javascript: if (document.simpleSearchForm.ha.value==&#39;Handle:&#39;) document.simpleSearchForm.ha.value = &#39;&#39;;" onblur="javascript:if (document.simpleSearchForm.ha.value == &#39;&#39;)document.simpleSearchForm.ha.value = &#39;Handle:&#39;;">
+            <a href="javascript:javascript:void document.simpleSearchForm.submit();" class="btn btn-search-member"><i>SEARCH</i></a>
+        </form>
+    </div>
+</section>
+
+<!-- End .member-search -->
+
+</div>
+
+    
+    
+
+
+
+        </td>
+
+
+
+        <td width="100%" align="left" class="bodyColumn">
+
+            
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" class="pageTitleTable" style="visibility: visible;">
+    <tbody><tr>
+        <td width="100%" class="pageTitle">
+
+
+            
+                
+                    
+                    <img border="0" src="./TopCoder_files/header_long_comps_topcoder.gif" alt="long_comps_topcoder">
+                
+                
+            
+
+
+        </td>
+        <td align="right" class="pageSubtitle">&nbsp;Problem Statement</td>
+    </tr>
+</tbody></table>
+
+
+
+            <div style="float:right;font-size: 13px;">
+                <div id="printableLink"><a href="http://community.topcoder.com/tc?module=MatchDetails&rd=16525">Register &amp; Rules</a>   &nbsp;|&nbsp; <a href="http://community.topcoder.com/longcontest/?module=ViewStandings&rd=16525">Standings/Registrants</a>   &nbsp;|&nbsp; <a href="https://apps.topcoder.com/forums/?module=ThreadList&forumID=597595">Forum</a>   &nbsp;|&nbsp; <a href="Javascript:makeInvisible();" mce_href="Javascript:makeInvisible();">Printable view</a></div>
+                <div id="navigableLink" class="invisible"><a href="Javascript:makeNavigable();" mce_href="Javascript:makeNavigable();">Normal view</a></div>
+            </div>
+
+            <span class="bigHandle">Contest: 
+
+
+
+
+
+<a href="http://community.topcoder.com/longcontest/?module=ViewStandings&rd=16525" class="bcLink">
+    Quake Predictor Early Registration
+</a></span><br>                
+            <span class="bodySubtitle">Problem: QuakePredictorRegistration</span><br>
+            <br>
+			
+			
+			   
+			
+            <div>
+                <table style="visibility: visible;"><tbody><tr><td colspan="2"><h3>Problem Statement</h3></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h3><b>Early registration phase</b></h3>
+<p><b>
+Please note that the early registration phase is experimental. This contest contains large amounts of data and we would like you to gain access before the submission phase starts. During the early registration phase, there might be changes in details such as: Problem statement, scoring formula and testing software updates. However, the format of the magnetometer data will not change. The primary task of receiving hourly data and predicting an event towards the future will not change. Any feedback or ideas about changing details of the problem can be communicated in the forums during the early registration phase.
+</b>
+</p>
+
+<h3>Prizes</h3>
+<p>The best 5 performers of this contest (according to system test results) will receive the following prizes: 
+</p><ol>
+<li>place: $10000 </li>
+<li>place: $6000 </li>
+<li>place: $4000 </li>
+<li>place: $3000 </li>
+<li>place: $2000 </li>
+</ol>
+<p></p>
+
+<h3>Background</h3>
+<p>QuakeFinder (QF) has been involved for over 12 years with research looking at several electromagnetic indicators that may eventually provide short term (weeks to days) warning for large seismic events. These electromagnetic signals or indicators appear to be related to stress-induced release of charge conductors (p-hole carriers) deep in the earth, near future earthquake hypocenters. See this <a href="http://www.quakefinder.com/research/pdf/FF_USGS_Seminar_02_04_09_optimized.pdf">document</a>. The indicators manifest themselves as unusual magnetic (unipolar) pulses, large increases in air conductivity near the future epicenter, "earthquake lights" (extreme cases of air ionization), and apparent infra red patterns seen near the epicenter as detected via various IR weather and environmental satellites. There may be also other manifestations that we are currently not aware of.
+You will be provided with several specific data sets (e.g. 3 axis induction magnetometer channels, and air conductivity sensor channel) from ground instruments near several earthquakes in California and Peru.
+</p>
+
+<h3>Problem Statement</h3>
+<p>
+Your task is to develop a software algorithm to uniquely identify the electromagnetic pulses that may precede an earthquake by days to weeks. </p>
+<p>Each data set contains measurements from 5 to 9 different sites. Each site provides 3 channels of information, measured at a frequency of 32 or 50 samples per second. Hourly data for all the sites and channels will be given to your algorithm. Your algorithm should return the probability of an earthquake event happening for every coming hour at each site, for a period of 90 days.
+</p>
+<p>
+The earthquake signal propagation speed is of the order of 4km/second, but <a href="http://www.topcoder.com/contest/problem/QuakePredictor/transitTime.m">here</a> is a more precise formula for the earthquake transit time. The distance in km between two locations can be calculated with the formula given <a href="http://www.topcoder.com/contest/problem/QuakePredictor/earthDistance.m">here</a>.
+</p>
+<p>
+As a real raw magnetometer data, it may measure many signals with the origins non-related to earthquakes. Many of those signals may have even stronger amplitude than the signal from the events themselves. Here are just a few examples of some of the known signals of that type: Vehicle engines, lightning, solar flares, electrical interference, magnetometer resets, ...
+</p>
+
+<h3>Implementation Details</h3>
+<p>
+You should implement the <tt>init</tt> method, which provides you with information about the sample rate, number of sites and their locations. The <tt>init</tt> method will be called once for every test case. <tt>sampleRate</tt> contains the number of samples measured (<b>H</b>) in each second. <tt>numOfSites</tt> contains the number of sites (<b>S</b>).  The <tt>sitesData</tt> array contains the location for each site. The latitude of the <b>i</b><sup>th</sup> site is available in <tt>sitesData[i*2]</tt> and the longitude in <tt>sitesData[i*2+1]</tt>. You can return any integer, the value will be ignored.
+</p>
+<p>
+You should implement the <tt>forecast</tt> method. The method will be called once for each hour of data. <tt>hour</tt> contains the zero-based index of the hour to which the data belongs. The data array contains the measurements for all sites and all their channels for the specific hour. The array will contain <b>H*3600*S*3</b> elements. The <b>i</b><sup>th</sup> measurement for channel <b>c</b> from site <b>j</b> will be at <tt>data[j*(H*3600*3) + c*(H*3600) + i]</tt>. The range of the values in the data array is in [0,2^24]. Sometimes it happens that measurements are not always available, if the data array contains a value of <b>-1</b> it indicates that the measurement is not provided. <tt>K</tt> contains the planetary magnetic activity index at the given hour as is in the range [0,10]. <tt>globalQuakes</tt> contains information about earthquakes that happened at other locations during the hour. The latitude of the <b>i</b><sup>th</sup> quake is available in <tt>globalQuakes[i*5]</tt> and the longitude in <tt>globalQuakes[i*5+1]</tt>. The depth of the quake in <tt>globalQuakes[i*5+2]</tt> and the magnitude in <tt>globalQuakes[i*5+3]</tt>. <tt>globalQuakes[i*5+4]</tt> contains the time in seconds from the start of the test case when the earthquake happened. 
+</p>
+
+<p>
+You should return a matrix <b>N</b> of size <b>S * 2160</b>. Each value in the matrix should be the probability of an earthquake event happening at site <b>j</b> at time <b>t</b>. In other words, the value at <tt>return[t*S + j]</tt> should contain the probability of an earthquake event at site <b>j</b> at hour <b>t</b>. 
+</p>
+<p>
+Each test case will have only one earthquake event, your forecast method will stop being called when the event occurred.
+</p>
+
+<h3>Scoring</h3>
+<p>
+Your forecast will be scored from day 32 (hour 768) onwards, until the earthquake event occurred.
+Your returned matrix <b>N</b> will be normalized in the interval from hour <tt>max(hour, 768)</tt> to <tt>2160</tt>. Let <b>NN</b> be the normalized sub-matrix of <b>N</b>. Let <b>G</b> be the entry in the matrix <b>NN</b> where the actual event happened at the specific hour and at the closest site to the epicenter. Your score (<b>F</b>) for a single hour will then be:</p>
+<p>
+&nbsp;
+<tt>F = sizeof(NN) * ( 2 * G - Sum of squared values in NN) - 1</tt>
+&nbsp;
+</p>
+<p>
+The scoring system is adjusted in the way that your algorithm receives a zero score on a test if it constantly returns equal probabilities to all hourly cells. Also, the scoring formula is build in a way that adding a random noise to the output reduces the expectation of the score.
+</p>
+<p>
+Your score for a test case will then be the average of all the <b>F</b> scores. Finally, your total score is equal to the sum of scores on all test cases. If your total score is negative, you will receive a zero total score. Your total score shown on the leaderboard will be divided by the number of test cases and multiplied by 1000000.
+</p>
+
+<h3>Data sets</h3>
+<p>
+The training data sets consist of 50% of all the sets we have available for the contests. The data can be accessed <a href="http://www.topcoder.com/contest/problem/QuakePredictor/manual.html">here</a>
+</p><ul>
+<li>The 4 example test cases will execute your algorithm on these training data seeds: 4, 6, 7 and 8.</li>
+<li>The 60 provisional test cases will use 20% of the data and is different from the training data.</li>
+<li>The 90 system test cases will use 30% of the remaining data and is also different from the training and provisional data.</li>
+</ul>
+<p></p>
+
+<h3>Tools</h3>
+<p>
+A visualization tool is provided for offline testing and can be downloaded <a href="http://www.topcoder.com/contest/problem/QuakePredictor/manual.html">here</a>.
+</p>
+
+<h3><b>Special Rules</b></h3>
+<p>
+We are very excited to provide you with the opportunity to work on a real, not artificial, earthquake data. Given that, we want to specifically clarify, that it is not allowed for your solution to use external datasources or exploit any type of test-cases overlaps in order to localize the timing of the event or make preferences towards it's location. Your solution must presume that the chance of the event is equal for all the hours and all the sites of the test-case, and modify those probabilities based on the analysis of the signal from the given test-case only. The solutions will be screened and tested after the contest, and the ones, not compliant with this request, will get disqualified. Please, don't hesitate to send us a request if you think to apply a technique that has a chance to be close to borderline. We want this to be an exciting scientific contest, so help us to make it fair!
+</p>
+</td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2"><h3>Definition</h3></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><table style="visibility: visible;"><tbody><tr><td>Class:</td><td>QuakePredictorRegistration</td></tr><tr><td>Method:</td><td>displayTestCase</td></tr><tr><td>Parameters:</td><td>String</td></tr><tr><td>Returns:</td><td>String</td></tr><tr><td>Method signature:</td><td>String displayTestCase(String s)</td></tr><tr><td colspan="2">(be sure your method is public)</td></tr></tbody></table></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr><tr><td></td></tr><tr><td colspan="2">&nbsp;</td></tr><tr><td colspan="2"><h3>Examples</h3></td></tr><tr><td align="center" nowrap="true">0)</td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><table style="visibility: visible;"><tbody><tr><td><pre></pre></td></tr><tr><td><table style="visibility: visible;"><tbody><tr><td colspan="2"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td align="center" nowrap="true">1)</td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><table style="visibility: visible;"><tbody><tr><td><pre></pre></td></tr><tr><td><table style="visibility: visible;"><tbody><tr><td colspan="2"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td align="center" nowrap="true">2)</td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><table style="visibility: visible;"><tbody><tr><td><pre></pre></td></tr><tr><td><table style="visibility: visible;"><tbody><tr><td colspan="2"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td align="center" nowrap="true">3)</td><td></td></tr><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td><table style="visibility: visible;"><tbody><tr><td><pre></pre></td></tr><tr><td><table style="visibility: visible;"><tbody><tr><td colspan="2"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><hr><p>This problem statement is the exclusive and proprietary property of TopCoder, Inc.  Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited.  (c)2010, TopCoder, Inc.  All rights reserved.  </p>
+
+            </div>
+
+
+        </td>
+
+        
+
+        
+
+        
+    </tr>
+</tbody>
+</table>
+
+<div id="onBottom">
+
+
+
+
+
+
+    
+        <footer id="footer">
+            <div class="container">
+                <div class="footerContentSection twitter">
+                    <div class="title">Twitter</div>
+                    <div class="footerContent">
+
+
+                        
+
+                        <a class="btn btnFooter" href="http://www.twitter.com/topcoder"><span class="twFollowIcon" style="margin-left: 1px;"></span><span class="twFollowBtnText">Follow</span></a>
+                    </div>
+                </div>
+                <div class="footerContentSection recentBlogPosts">
+                    <div class="title">Recent Blog Posts Updated</div>
+                         <div class="footerContent">
+                              <div class="footerBlogEntry">
+                                     <a href="http://www.topcoder.com/blog/new-look-and-feel-for-tc/?utm_source=rss&utm_medium=rss&utm_campaign=new-look-and-feel-for-tc">Apr 23</a>
+
+                                 @timmhicks – Tim Hicks Happy Hump Day topcoders! We are excited to announce that we will be releasing a new look for the very popular /tc by...<a href="http://www.topcoder.com/blog/new-look-and-feel-for-tc/" class="more">Read More</a></div><div class="footerBlogEntry">
+                                     <a href="http://www.topcoder.com/blog/space-the-final-email-frontier/?utm_source=rss&utm_medium=rss&utm_campaign=space-the-final-email-frontier">Apr 23</a>
+
+                                 Do you ever find yourself hitting “send” on an email and wondering if it’ll arrive in the recipient’s inbox? Sending email has become so ubiquitous, simple and...<a href="http://www.topcoder.com/blog/space-the-final-email-frontier/" class="more">Read More</a></div><div class="footerBlogEntry">
+                                     <a href="http://www.topcoder.com/blog/when-beginning-in-crowdsourcing-and-open-innovation-can-be-as-easy-as-playing-board-games/?utm_source=rss&utm_medium=rss&utm_campaign=when-beginning-in-crowdsourcing-and-open-innovation-can-be-as-easy-as-playing-board-games">Apr 22</a>
+
+                                 @ClintonBon – Clinton Bonner We know what you’re thinking. Great, another ‘puff piece’ on the ‘wisdom of crowds’ and how all we need to do is post...<a href="http://www.topcoder.com/blog/when-beginning-in-crowdsourcing-and-open-innovation-can-be-as-easy-as-playing-board-games/" class="more">Read More</a></div><span id="blogTemplate" style="display: none">
+                                 <div class="footerBlogEntry">
+                                     <a href="javascript:;"></a>
+
+                                 </div>
+                              </span>
+                             <a class="btn btnFooter" href="http://www.topcoder.com/blog">View More</a>
+                         </div>
+
+
+                </div>
+                <div class="footerContentSection aboutTopCoder">
+                    <div class="title">About topcoder</div>
+                    <div class="footerContent">
+                        The topcoder community gathers the world's experts in design, development and data science to work on interesting and challenging problems for fun and reward. We want to help topcoder members improve their skills, demonstrate and gain reward for their expertise, and provide the industry with objective insight on new and emerging technologies.
+                    </div>
+                    <a class="btn btnFooter" href="http://www.topcoder.com/mission">About Us</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="container">
+                <div class="connected">
+                    <section class="social">
+                        <h4>Get Connected</h4>
+                        <ul>
+                            <li><a class="fb" href="http://www.facebook.com/topcoder">FB</a></li>
+                            <li><a class="tw" href="http://www.twitter.com/topcoder">TW</a></li>
+                            <li><a class="gp" href="https://plus.google.com/u/0/b/104268008777050019973/104268008777050019973/posts">GP</a></li>
+                            <li><a class="in" href="https://www.linkedin.com/company/topcoder">IN</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </section>
+                    <section class="updates">
+                        <div class="row">
+                            <form id="emailForm" onsubmit="return newsletter_check(this)" name="FeedBlitz_9feab01d431311e39e69002590771423" style="display:block" method="POST" action="http://www.feedblitz.com/f/f.fbz?AddNewUserDirect">
+                                <input type="email" class="email isBlured" name="EMAIL" placeholder="Your email address" maxlength="64" style="display: block;">
+                                <input name="FEEDID" type="hidden" value="926643">
+                                <input name="PUBLISHER" type="hidden" value="34610190">
+                                <!-- <a onclick="FeedBlitz_9feab01d431311e39e69002590771423s(this.form);" class="btn">Submit</a> -->
+                                <input onclick="FeedBlitz_9feab01d431311e39e69002590771423s(this.form);" type="button" class="btn btnSubmitFooter" value="Submit">
+                                <input type="hidden" name="na" value="s">
+                                <input type="hidden" name="nr" value="widget">
+                            </form>
+                            <script type="text/javascript">function FeedBlitz_9feab01d431311e39e69002590771423i(){var x=document.getElementsByName('FeedBlitz_9feab01d431311e39e69002590771423');for(i=0;i<x.length;i++){x[i].EMAIL.style.display='block'; x[i].action='http://www.feedblitz.com/f/f.fbz?AddNewUserDirect';}} function FeedBlitz_9feab01d431311e39e69002590771423s(v){v.submit();}FeedBlitz_9feab01d431311e39e69002590771423i();</script>
+
+                        </div>
+                    </section>
+                </div>
+                <div class="copyright">
+                    <section>
+                        <br>
+                        © 2014 topcoder. All Rights reserved.
+                        <br>
+                        <a href="http://www.topcoder.com/community/how-it-works/privacy-policy/" class="privacyStmtLink">Privacy Policy</a> | <a href="http://www.topcoder.com/community/how-it-works/terms/" class="legalDisclaimerLink">Terms</a>
+                    </section>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+    
+    
+
+
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6340959-1']);
+  _gaq.push(['_setDomainName', '.topcoder.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</div>
+
+
+
+
+</body></html>

@@ -1,0 +1,133 @@
+
+<!-- saved from url=(0066)http://www.topcoder.com/contest/problem/QuakePredictor/manual.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><h3> 
+Downloads
+</h3> 
+<ul> 
+<li> 
+<a href="http://www.topcoder.com/contest/problem/QuakePredictor/tester.jar">Executable JAR of the visualizer</a>
+</li> 
+<li> 
+<a href="http://www.topcoder.com/contest/problem/QuakePredictor/QuakeTester.java">Source code of the visualizer</a>
+</li> 
+<li>
+<a href="https://drive.google.com/open?id=0Bxc6PUFWfKMzfmliNFRyRDZSQW9ZT1pyR0tTSHVoSGl0OUh1SVpXZTc4c3BNZ3l1elRBQ2s">Training data</a>
+</li><li><a href="http://www.topcoder.com/contest/problem/QuakePredictor/gtf.csv">Ground truth file for training data</a>
+</li>
+</ul>
+ 
+<hr> 
+ 
+<p> 
+In order to use the offline tester / visualizer tool for testing your solution locally, you'll have to modify your solution
+by adding the main method that interacts with the tester / visualizer via reading data from standard input and
+writing data to standard output. As long as you do not change the implementation of method <i>init</i> and <i>forecast</i>, this doesn't affect the way your solution works when being submitted to our server.
+</p> 
+
+<p>
+To simulate a single test case, your program should implement the following protocol (each integer or double is to be read from / printed in a separate line):
+</p><ul>
+<li>Read integer <b>sampleRate</b>, the number of samples in a second.</li>
+<li>Read integer <b>S</b>, the number of sites.</li>
+<li>Read integer <b>SLEN</b>, the size of the sitesData array.</li>
+<li>Read <b>SLEN</b> doubles <b>sitesData</b>[0], <b>sitesData</b>[1], ..., <b>sitesData</b>[<b>SLEN</b>-1].</li>
+<li>Call <i>init</i>(<b>sampleRate</b>, <b>S</b>, <b>sitesData</b>). Let <i>ret</i> be the return integer value.</li>
+<li>Print the <i>ret</i> value on a separate line.</li>
+<li>Read integer <b>doTraining</b>, a flag used for local training.</li>
+<li>If <b>doTraining=1</b>, do the following:</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read integer <b>gtf_Site</b>, the site where the quake will occur.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read integer <b>gtf_Hour</b>, the hour when the quake will occur.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read double <b>gtf_Latitude</b>, the latitude where the quake will occur.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read double <b>gtf_Longitude</b>, the longitude where the quake will occur.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read double <b>gtf_Magnitude</b>, the magnitude of the quake.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read double <b>gtf_DistToQuake</b>, the distance to the quake from the closest site in km.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Call <i>answer</i>(<b>gtf_Site</b>, <b>gtf_Hour</b>, <b>gtf_Latitude</b>, <b>gtf_Longitude</b>, <b>gtf_Magnitude</b>, <b>gtf_DistToQuake</b>).</li>
+<li>Repeat the following for every hour:</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read integer <b>hour</b>, the hour that the following data belongs to.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;If <b>hour=-1</b>, break out of the loop, the quake happened.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read integer <b>DLEN</b>, the size of the data array.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read <b>DLEN</b> integers <b>data</b>[0], <b>data</b>[1], ..., <b>data</b>[<b>DLEN</b>-1].</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read double <b>K</b>, the planetary magnetic activity index.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read integer <b>QLEN</b>, the size of the global quake array.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Read <b>QLEN</b> doubles <b>globalQuakes</b>[0], <b>globalQuakes</b>[1], ..., <b>globalQuakes</b>[<b>QLEN</b>-1].</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Call <i>forecast</i>(<b>hour</b>, <b>data</b>, <b>K</b>, <b>globalQuakes</b>). Let <i>retM[]</i> be the return array.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Print the length of <i>retM[]</i> on a separate line.</li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;Print the doubles in <i>retM[]</i> each on a separate line. Flush standard output stream.</li>
+<p></p>
+
+<p>
+In other words, you should implement the following pseudocode in the main method of your solution:
+</p> 
+<pre>    
+    sampleRate = parseInt(readLine())
+    S = parseInt(readLine())
+    SLEN = parseInt(readLine())
+    for (i=0; i &lt; SLEN; i++)
+        sitesData[i] = parseDouble(readLine())
+    ret = init(sampleRate, S, sitesData)
+    printLine(ret)
+
+    doTraining = parseInt(readLine())
+    if (doTraining=1)
+    {
+        gtf_Site = parseInt(readLine())
+        gtf_Hour = parseInt(readLine())
+        gtf_Latitude = parseDouble(readLine())
+        gtf_Longitude = parseDouble(readLine())
+        gtf_Magnitude = parseDouble(readLine())
+        gtf_DistToQuake = parseDouble(readLine())
+        answer(gtf_Site, gtf_Hour, gtf_Latitude, gtf_Longitude, gtf_Magnitude, gtf_DistToQuake);
+    }
+    repeat until quake happens
+    {
+        hour = parseInt(readLine())
+        if (hour=-1) break
+        DLEN = parseInt(readLine())
+        for (i=0; i &lt; DLEN; i++)
+            data[i] = parseInt(readLine())
+        K = parseDouble(readLine())
+        QLEN = parseInt(readLine())
+        for (i=0; i &lt; QLEN; i++)
+            globalQuakes[i] = parseDouble(readLine())
+        retM[] = forecast(hour, data, K, globalQuakes)
+        printLine(retM.length)
+        for (i=0; i &lt; retM.length; i++)
+            printLine(retM[i])
+        flush(stdout)
+    }
+</pre> 
+ 
+<p> 
+In order to run the tester / visualizer, you should use the following command:
+</p> 
+ 
+<pre>java -jar tester.jar -exec "&lt;command&gt;"
+</pre>
+
+<p> 
+<tt>&lt;command&gt;</tt> is the command you would use to execute your solution. If your compiled solution is an executable file, the command will just
+be the full path to it, for example, "C:\TopCoder\solution.exe" or "~/topcoder/solution". In case your compiled solution is to be run
+with the help of an interpreter, for example, if you program in Java, the command will be something like "java -cp C:\TopCoder Solution".
+</p> 
+
+<p> 
+Additionally you can use the following parameters (all are optional):
+</p> 
+
+<ul> 
+<li><tt>-seed &lt;seed&gt;</tt>. Sets the seed used for test case generation. Default value is 1.</li>
+<li><tt>-folder &lt;data folder&gt;</tt>. Name of the folder where the data is stored. ex: data/ </li>
+<li><tt>-train</tt>. The ground truth data will be passed to your algorithm. doTraining will be set to 1. </li>
+<li><tt>-silent</tt>. Debug messages from the tester will not be displayed.</li>
+</ul>                                                    
+
+<p>
+You can print any debug information of your solution to the standard error stream and it will be forwarded to the standard output of the tester. Place the gtf.csv file in the same folder as the tester.jar.
+</p>
+ 
+<p> 
+For more information on using visualizers, please check the following <a href="http://forums.topcoder.com/?module=Thread&threadID=670892&start=0">recipe draft</a> 
+from TopCoder Cookbook. Note that this is not a troubleshooting thread, please use the match forum for questions instead.
+</p> 
+
+</ul></body></html>
